@@ -1,111 +1,68 @@
-// ====== PORTFÓLIO (FILTRO) ======
-const filterButtons = document.querySelectorAll(".filter");
-const works = document.querySelectorAll(".work");
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
 
-filterButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    filterButtons.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
 
-    const filter = btn.dataset.filter;
-
-    works.forEach((work) => {
-      const cat = work.dataset.cat;
-      const show = filter === "all" || cat === filter;
-      work.style.display = show ? "block" : "none";
+  mainNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
     });
   });
-});
-
-// ====== FAQ (ACORDEÃO) ======
-const faqItems = document.querySelectorAll(".faq-item");
-faqItems.forEach((item) => {
-  const header = item.querySelector(".faq-header");
-  if (!header) return;
-
-  header.addEventListener("click", () => {
-    faqItems.forEach((i) => i !== item && i.classList.remove("active"));
-    item.classList.toggle("active");
-  });
-});
-
-// ====== TOAST (opcional, se você tiver no HTML) ======
-const toast = document.getElementById("toast");
-const toastMessage = document.getElementById("toastMessage");
-let toastTimer;
-
-function showToast(msg, type = "info") {
-  if (!toast || !toastMessage) return;
-  toastMessage.textContent = msg;
-  toast.className = `toast show ${type}`;
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => toast.classList.remove("show"), 3500);
 }
 
-// ====== FORM -> WHATSAPP ======
-const contactForm = document.getElementById("contactForm");
-const submitBtn = document.getElementById("submitBtn");
-
-// Seu número (sem espaços)
-const WHATSAPP_NUMBER = "5561995289436";
-
-function buildWhatsAppMessage(data) {
-  return [
-    `Olá! Quero fazer um site com a UpClickWeb. 🚀
-Tudo certo! Sua mensagem chegou até a gente.
-Em breve alguém da UpClickWeb vai entrar em contato com você.
-Obrigada por confiar no nosso trabalho 💙`,
-    "",
-    `Nome: ${data.nome || "-"}`,
-    `Email: ${data.email || "-"}`,
-    `Telefone: ${data.telefone || "-"}`,
-    `Empresa: ${data.empresa || "-"}`,
-    "",
-    `Mensagem: ${data.mensagem || "-"}`,
-  ].join("\n");
-}
+const contactForm = document.querySelector('#contactForm');
 
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-    const fd = new FormData(contactForm);
+    const data = new FormData(contactForm);
+    const name = String(data.get('name') || '').trim();
+    const company = String(data.get('company') || '').trim();
+    const project = String(data.get('project') || '').trim();
 
-    const data = {
-      nome: (fd.get("nome") || "").toString().trim(),
-      email: (fd.get("email") || "").toString().trim(),
-      telefone: (fd.get("telefone") || "").toString().trim(),
-      empresa: (fd.get("empresa") || "").toString().trim(),
-      mensagem: (fd.get("mensagem") || "").toString().trim(),
-    };
+    const message = [
+      'Olá! Quero conversar sobre um projeto com a SYNQORA.',
+      '',
+      `Nome: ${name}`,
+      company ? `Empresa/projeto: ${company}` : '',
+      `Ideia/objetivo: ${project}`,
+    ]
+      .filter(Boolean)
+      .join('\n');
 
-    // validação básica
-    if (!data.nome || !data.email || !data.mensagem) {
-      showToast("Preencha nome, email e mensagem.", "error");
-      return;
-    }
-
-    if (submitBtn) {
-      submitBtn.disabled = true;
-      submitBtn.textContent = "ABRINDO WHATSAPP...";
-    }
-
-    const text = encodeURIComponent(buildWhatsAppMessage(data));
-
-    // wa.me abre no WhatsApp Web / App
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
-
-    // abre em nova aba
-    window.open(url, "_blank", "noopener");
-
-    showToast("WhatsApp aberto com sua mensagem ✅", "success");
-
-    // opcional: limpar o form
-    contactForm.reset();
-
-    if (submitBtn) {
-      submitBtn.disabled = false;
-      submitBtn.textContent = "ENVIAR NO WHATSAPP";
-    }
+    const whatsappUrl = `https://wa.me/5561995289436?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   });
+}
+
+const revealTargets = document.querySelectorAll(
+  '.solution-card, .process-item, .project-card, .map-node, .about-copy, .faq details'
+);
+
+if ('IntersectionObserver' in window) {
+  revealTargets.forEach((element) => {
+    element.style.opacity = '0';
+    element.style.transform = 'translateY(18px)';
+    element.style.transition = 'opacity .55s ease, transform .55s ease';
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealTargets.forEach((element) => observer.observe(element));
 }

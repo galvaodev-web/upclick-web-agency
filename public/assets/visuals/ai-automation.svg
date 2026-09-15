@@ -1,0 +1,15 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" fill="#081729"/>
+  <circle cx="360" cy="260" r="132" fill="#0D2037" stroke="#23405F"/>
+  <circle cx="360" cy="260" r="72" fill="#071322" stroke="#7CC8FF" stroke-width="3"/>
+  <path d="M288 260H176M432 260H544M360 188V88M360 332V432M309 209L214 128M411 209L506 128M309 311L214 392M411 311L506 392" stroke="#23405F" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="176" cy="260" r="30" fill="#1668FF"/>
+  <circle cx="544" cy="260" r="30" fill="#00A3FF"/>
+  <circle cx="360" cy="88" r="30" fill="#6A5CFF"/>
+  <circle cx="360" cy="432" r="30" fill="#1668FF"/>
+  <circle cx="214" cy="128" r="24" fill="#102B49" stroke="#7CC8FF" stroke-width="4"/>
+  <circle cx="506" cy="128" r="24" fill="#102B49" stroke="#7CC8FF" stroke-width="4"/>
+  <circle cx="214" cy="392" r="24" fill="#102B49" stroke="#7CC8FF" stroke-width="4"/>
+  <circle cx="506" cy="392" r="24" fill="#102B49" stroke="#7CC8FF" stroke-width="4"/>
+  <path d="M320 276L348 220L400 276H366L348 312L320 276Z" fill="#7CC8FF"/>
+</svg>

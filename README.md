@@ -1,30 +1,35 @@
-# 🚀 UpClick
+# SYNQORA
 
-O **UpClick** é um projeto de site focado em conversão, desenvolvido com **HTML, CSS e JavaScript**, pensado para servir como base de **landing pages**, páginas de vendas ou projetos iniciais de e-commerce e marketing digital.
+Site institucional estatico para a SYNQORA, uma empresa de tecnologia focada em
+software, inteligencia artificial, automacoes, dados, integracoes e transformacao
+digital para empresas.
 
-O projeto está publicado via **GitHub Pages** e pode ser acessado online.
+## Objetivo
 
-🔗 **Demo:**  
-https://guilhermegalvaosilva.github.io/UpClick/
+- Apresentar a SYNQORA como software house e consultoria tecnologica.
+- Comunicar solucoes digitais com visual premium, moderno e responsivo.
+- Estruturar areas para solucoes, servicos, processo, projetos, tecnologias,
+  sobre, chamada final e contato.
 
----
+## Tecnologias
 
-## 📌 Objetivo do Projeto
+- HTML5
+- CSS3
+- JavaScript Vanilla
+- SVGs proprios para marca e mockups visuais
 
-- Criar uma página moderna, leve e responsiva
-- Servir como base para projetos de venda, captação de leads ou apresentação de serviços
-- Praticar e demonstrar conhecimentos em desenvolvimento front-end
+## Estrutura
 
----
+- `index.html`: conteudo, SEO, metadata e secoes do site.
+- `style.css`: identidade visual, responsividade, layout e animacoes.
+- `script.js`: menu mobile, navbar com scroll, revelacao de elementos e formulario.
+- `public/assets/brand`: logo, favicon e Open Graph da SYNQORA.
+- `public/assets/visuals`: mockups dos projetos apresentados.
 
-## 🛠️ Tecnologias Utilizadas
+## Execucao local
 
-- **HTML5** – Estrutura semântica
-- **CSS3** – Estilização e responsividade
-- **JavaScript (Vanilla)** – Interações e lógica básica
-- **GitHub Pages** – Hospedagem gratuita do projeto
+```bash
+python -m http.server 5173
+```
 
----
-
-## 📂 Estrutura do Projeto
-
+Depois acesse `http://localhost:5173`.

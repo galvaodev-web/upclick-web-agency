@@ -1,0 +1,23 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#06111F"/>
+  <path d="M0 496C206 395 340 534 529 410C706 294 835 149 1200 226V630H0V496Z" fill="#0D2037"/>
+  <g opacity=".35">
+    <path d="M112 130H1088" stroke="#7CC8FF"/>
+    <path d="M112 230H1088" stroke="#7CC8FF"/>
+    <path d="M112 330H1088" stroke="#7CC8FF"/>
+    <path d="M112 430H1088" stroke="#7CC8FF"/>
+    <path d="M220 70V546" stroke="#7CC8FF"/>
+    <path d="M420 70V546" stroke="#7CC8FF"/>
+    <path d="M620 70V546" stroke="#7CC8FF"/>
+    <path d="M820 70V546" stroke="#7CC8FF"/>
+    <path d="M1020 70V546" stroke="#7CC8FF"/>
+  </g>
+  <rect x="86" y="90" width="86" height="86" rx="18" fill="#FFFFFF"/>
+  <path d="M108 144L128 114L151 144" stroke="#1668FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M121 136H140" stroke="#00A3FF" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="158" cy="108" r="7" fill="#00A3FF"/>
+  <text x="86" y="260" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800">SYNQORA</text>
+  <text x="86" y="338" fill="#B8C7D9" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="500">Software, IA, automacao e dados para empresas.</text>
+  <rect x="86" y="410" width="282" height="54" rx="8" fill="#1668FF"/>
+  <text x="114" y="445" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Tecnologia para evoluir</text>
+</svg>

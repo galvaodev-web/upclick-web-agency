@@ -5,475 +5,263 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
       name="description"
-      content="Sites profissionais e rápidos, com design, copy e estrutura de conversão."
+      content="SYNQORA cria software, inteligencia artificial, automacoes, dados e integracoes para empresas que querem evoluir."
     />
-    <meta name="theme-color" content="#0549A6" />
+    <meta name="theme-color" content="#06111f" />
+    <meta name="application-name" content="SYNQORA" />
     <meta
       property="og:title"
-      content="UpClickWeb | Sites que geram conversas"
+      content="SYNQORA | Tecnologia para empresas que querem evoluir"
     />
     <meta
       property="og:description"
-      content="Landing pages e sites rápidos, com design, copy e estrutura de conversão."
+      content="Software, IA, automacao e dados para transformar processos, produtos e negocios."
     />
-    <meta
-      property="og:image"
-      content="public/assets/brand/upclickweb-social-1200x630.png"
-    />
+    <meta property="og:image" content="public/assets/brand/synqora-og.svg" />
     <meta property="og:type" content="website" />
-    <title>UpClickWeb | Sites que geram conversas</title>
-    <link
-      rel="icon"
-      href="public/assets/brand/upclickweb-favicon-512.png"
-      type="image/png"
-    />
+    <title>SYNQORA | Software, IA e Automacao</title>
+    <link rel="icon" href="public/assets/brand/synqora-favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-17808029672"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "AW-17808029672");
-    </script>
   </head>
   <body>
-    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
-    <header>
-      <div class="nav">
-        <a class="brand" href="#home" aria-label="UpClickWeb — início">
-          <picture>
-            <source
-              media="(max-width:600px)"
-              srcset="public/assets/brand/upclickweb-logo-mobile.png"
-            />
-            <img
-              src="public/assets/brand/upclickweb-logo-header.png"
-              width="312"
-              height="80"
-              alt="upclickweb"
-            />
-          </picture> </a
-        ><button class="menu" aria-expanded="false" aria-controls="navlinks">
+    <a class="skip" href="#conteudo">Ir para o conteudo</a>
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand" href="#inicio" aria-label="SYNQORA - inicio">
+          <img src="public/assets/brand/synqora-logo.svg" width="178" height="38" alt="SYNQORA" />
+        </a>
+        <button class="menu" aria-expanded="false" aria-controls="navlinks">
           <span class="sr">Abrir menu</span><i></i><i></i><i></i>
         </button>
         <nav id="navlinks" aria-label="Principal">
-          <a href="#servicos">Serviços</a><a href="#portfolio">Portfólio</a
-          ><a href="#processo">Processo</a><a href="#sobre">Sobre</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#solucoes">Solucoes</a>
+          <a href="#servicos">Servicos</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
         </nav>
-        <a class="btn small head-cta" href="#contato">Solicitar orçamento</a>
+        <a class="btn btn-small head-cta" href="#contato">Fale com a SYNQORA</a>
       </div>
     </header>
+
     <main id="conteudo">
-      <section class="hero wrap" id="home">
-        <div>
-          <p class="tag">Estratégia, design e tecnologia</p>
-          <h1>Design que atrai. Estrutura que converte.</h1>
+      <section class="hero section-shell" id="inicio">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software, dados e inteligencia conectados</p>
+          <h1>Construimos tecnologia para empresas que querem evoluir.</h1>
           <p class="lead">
-            Criamos sites e landing pages que fortalecem sua marca e transformam
-            interesse em novas oportunidades.
+            Software, inteligencia artificial, automacao e dados para transformar
+            processos, produtos e negocios.
           </p>
           <div class="actions">
-            <a class="btn" href="#contato">Solicitar orçamento</a
-            ><a class="btn outline" href="#portfolio">Ver projetos ↘</a>
+            <a class="btn" href="#contato">Comecar um projeto</a>
+            <a class="btn btn-ghost" href="#solucoes">Conhecer solucoes</a>
           </div>
-          <ul class="highlights">
-            <li>Design estratégico</li>
-            <li>Performance</li>
-            <li>Conversão</li>
+          <ul class="hero-metrics" aria-label="Areas de atuacao">
+            <li><strong>IA</strong><span>aplicada a operacao</span></li>
+            <li><strong>APIs</strong><span>sistemas conectados</span></li>
+            <li><strong>Dados</strong><span>decisao em tempo real</span></li>
           </ul>
         </div>
-        <div class="mockups" aria-label="Prévias de projetos">
-          <div class="grid"></div>
-          <div class="desktop">
-            <div class="bar">•••</div>
-            <img
-              src="images/site-institucional.jpg"
-              alt="Prévia de site institucional"
-              width="2000"
-              height="1500"
-            />
+        <div class="hero-visual reveal" aria-label="Interface abstrata com dados conectados">
+          <div class="visual-grid"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="system-panel panel-main">
+            <div class="panel-top">
+              <span></span><span></span><span></span>
+              <b>SYNQORA Core</b>
+            </div>
+            <div class="signal-map">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="data-lines">
+              <span style="--w: 82%"></span>
+              <span style="--w: 63%"></span>
+              <span style="--w: 74%"></span>
+            </div>
           </div>
-          <div class="phone">
-            <img
-              src="images/startup-conceito.jpg"
-              alt="Prévia mobile de projeto conceitual"
-              width="800"
-              height="500"
-            />
+          <div class="system-panel panel-card panel-ai">
+            <small>IA operacional</small>
+            <strong>+42%</strong>
+            <span>respostas automatizadas</span>
           </div>
-          <div class="chip">
-            <b>Sites responsivos</b><small>pensados para cada tela</small>
+          <div class="system-panel panel-card panel-flow">
+            <small>Fluxos ativos</small>
+            <strong>18</strong>
+            <span>integracoes monitoradas</span>
           </div>
         </div>
       </section>
-      <section class="wrap" id="servicos">
-        <div class="heading">
+
+      <section class="section-shell" id="solucoes">
+        <div class="section-heading reveal">
           <div>
-            <p class="tag">O que fazemos</p>
-            <h2>A estrutura certa para o seu momento.</h2>
+            <p class="eyebrow">Solucoes</p>
+            <h2>Tecnologia para conectar operacao, produto e crescimento.</h2>
           </div>
           <p>
-            Da primeira campanha à presença digital completa, cada projeto nasce
-            com um objetivo claro.
+            A SYNQORA projeta sistemas com foco em clareza tecnica, escalabilidade
+            e impacto real na rotina das empresas.
           </p>
         </div>
-        <div class="services">
-          <article>
-            <span>01</span><i>↗</i>
-            <h3>Landing page</h3>
-            <p>
-              <b>Para quem é</b> Campanhas, lançamentos e ofertas específicas.
-            </p>
-            <ul>
-              <li>Copy e estrutura de conversão</li>
-              <li>Design responsivo</li>
-              <li>WhatsApp e formulário</li>
-            </ul>
-            <strong>Uma jornada direta até o contato.</strong
-            ><a href="#contato">Solicitar orçamento →</a>
-          </article>
-          <article class="featured">
-            <span>02</span><i>◇</i>
-            <h3>Site institucional</h3>
-            <p>
-              <b>Para quem é</b> Negócios que precisam apresentar serviços com
-              credibilidade.
-            </p>
-            <ul>
-              <li>Arquitetura de conteúdo</li>
-              <li>Páginas institucionais</li>
-              <li>SEO básico e performance</li>
-            </ul>
-            <strong>Uma presença digital clara e profissional.</strong
-            ><a href="#contato">Solicitar orçamento →</a>
-          </article>
-          <article>
-            <span>03</span><i>◎</i>
-            <h3>Site + tráfego</h3>
-            <p>
-              <b>Para quem é</b> Negócios prontos para atrair público
-              qualificado.
-            </p>
-            <ul>
-              <li>Site preparado para campanhas</li>
-              <li>Google Ads ou Meta Ads</li>
-              <li>Acompanhamento e otimização</li>
-            </ul>
-            <strong>Site e mídia trabalhando juntos.</strong
-            ><a href="#contato">Solicitar orçamento →</a>
-          </article>
+        <div class="solution-grid">
+          <article class="solution-card reveal"><span>01</span><h3>Desenvolvimento de Software</h3><p>Sistemas e plataformas personalizadas para diferentes modelos de negocio.</p></article>
+          <article class="solution-card reveal"><span>02</span><h3>Inteligencia Artificial</h3><p>Aplicacoes de IA integradas aos processos e produtos das empresas.</p></article>
+          <article class="solution-card reveal"><span>03</span><h3>Automacao de Processos</h3><p>Automacao de tarefas repetitivas, integracoes e fluxos operacionais.</p></article>
+          <article class="solution-card reveal"><span>04</span><h3>Dados e Dashboards</h3><p>Transformacao de dados em informacoes uteis para tomada de decisao.</p></article>
+          <article class="solution-card reveal"><span>05</span><h3>Produtos Digitais</h3><p>Planejamento e desenvolvimento de plataformas SaaS, aplicativos e sistemas web.</p></article>
+          <article class="solution-card reveal"><span>06</span><h3>Integracoes</h3><p>Integracao entre APIs, sistemas, plataformas e servicos externos.</p></article>
         </div>
       </section>
-      <section class="portfolio" id="portfolio">
-        <div class="wrap">
-          <div class="heading">
+
+      <section class="services-band" id="servicos">
+        <div class="section-shell">
+          <div class="section-heading reveal">
             <div>
-              <p class="tag">Projetos & estruturas digitais</p>
-              <h2>O trabalho fala primeiro.</h2>
+              <p class="eyebrow">Servicos</p>
+              <h2>Da arquitetura ao produto em producao.</h2>
             </div>
-            <p>
-              Imagens disponíveis no projeto, sem atribuir clientes ou
-              resultados não comprovados.
-            </p>
+            <p>Atuamos em projetos novos, modernizacao de sistemas e criacao de camadas inteligentes sobre operacoes ja existentes.</p>
           </div>
-          <div class="filters" aria-label="Filtrar projetos">
-            <button class="filter active" data-filter="all" aria-pressed="true">
-              Todos</button
-            ><button class="filter" data-filter="site" aria-pressed="false">
-              Sites</button
-            ><button class="filter" data-filter="startup" aria-pressed="false">
-              Conceitos
-            </button>
-          </div>
-          <div class="projects">
-            <article class="work" data-cat="site">
-              <img
-                src="images/site-institucional.jpg"
-                alt="Estrutura de site institucional"
-                width="2000"
-                height="1500"
-                loading="lazy"
-              />
-              <div>
-                <span>Site institucional</span>
-                <h3>Estrutura institucional premium</h3>
-                <p>Design e desenvolvimento web</p>
-              </div>
-            </article>
-            <article class="work" data-cat="startup">
-              <img
-                src="images/startup-conceito.jpg"
-                alt="Projeto conceitual para startup"
-                width="800"
-                height="500"
-                loading="lazy"
-              />
-              <div>
-                <span>Projeto conceitual</span>
-                <h3>Experiência digital para startup</h3>
-                <p>Conceito visual e interface</p>
-              </div>
-            </article>
-            <article class="work wide" data-cat="site">
-              <img
-                src="images/screencapture-technext-github-io-startup2-index-html-2022-03-07-10_56_37-1.png"
-                alt="Captura de estrutura web disponível no repositório"
-                width="1366"
-                height="838"
-                loading="lazy"
-              />
-              <div>
-                <span>Referência técnica</span>
-                <h3>Estrutura responsiva de apresentação</h3>
-                <p>Arquivo de demonstração presente no projeto</p>
-              </div>
-            </article>
+          <div class="service-list">
+            <article class="reveal"><h3>Consultoria tecnologica</h3><p>Diagnostico tecnico, arquitetura, escolha de stack e plano de execucao.</p></article>
+            <article class="reveal"><h3>Sistemas sob medida</h3><p>Backoffice, portais, CRMs, ERPs leves e ferramentas internas.</p></article>
+            <article class="reveal"><h3>IA e automacoes</h3><p>Agentes, classificadores, automacoes de atendimento, documentos e rotinas.</p></article>
+            <article class="reveal"><h3>Dados e produto</h3><p>Pipelines, dashboards, metricas, SaaS, aplicativos e plataformas web.</p></article>
           </div>
         </div>
       </section>
-      <section class="benefits wrap">
-        <div>
-          <p class="tag">Estrutura que trabalha por você</p>
-          <h2>Não prometemos atalhos. Construímos uma base melhor.</h2>
-          <p>
-            Decisões de design e tecnologia que facilitam a jornada do cliente,
-            sem métricas artificiais.
-          </p>
-          <a href="#contato">Conversar sobre o projeto →</a>
-        </div>
-        <div class="benefit-list">
-          <article>
-            <span>01</span>
-            <div>
-              <h3>Contato mais fácil</h3>
-              <p>CTAs e WhatsApp posicionados para reduzir barreiras.</p>
-            </div>
-          </article>
-          <article>
-            <span>02</span>
-            <div>
-              <h3>Captação preparada</h3>
-              <p>Formulários organizados para receber oportunidades.</p>
-            </div>
-          </article>
-          <article>
-            <span>03</span>
-            <div>
-              <h3>Mais credibilidade</h3>
-              <p>Apresentação consistente com o nível do seu serviço.</p>
-            </div>
-          </article>
-          <article>
-            <span>04</span>
-            <div>
-              <h3>Experiência rápida</h3>
-              <p>Layout responsivo e código leve em qualquer dispositivo.</p>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="wrap" id="processo">
-        <div class="heading">
+
+      <section class="section-shell" id="processo">
+        <div class="section-heading reveal">
           <div>
-            <p class="tag">Como trabalhamos</p>
-            <h2>Um processo claro, do diagnóstico ao lançamento.</h2>
+            <p class="eyebrow">Como trabalhamos</p>
+            <h2>Um processo objetivo para reduzir incerteza tecnica.</h2>
           </div>
-          <p>
-            Você acompanha as decisões importantes sem precisar decifrar termos
-            técnicos.
-          </p>
+          <p>Cada etapa aproxima estrategia, engenharia e validacao para entregar solucoes que podem evoluir depois do lancamento.</p>
         </div>
-        <ol class="process">
-          <li>
-            <span>01</span>
-            <h3>Diagnóstico</h3>
-            <p>
-              Entendemos o negócio, o público e o objetivo para definir a
-              estrutura.
-            </p>
-          </li>
-          <li>
-            <span>02</span>
-            <h3>Design e construção</h3>
-            <p>
-              Organizamos conteúdo, interface e desenvolvimento com foco na
-              conversão.
-            </p>
-          </li>
-          <li>
-            <span>03</span>
-            <h3>Lançamento e evolução</h3>
-            <p>
-              Publicamos, refinamos e, quando contratado, conectamos as
-              campanhas.
-            </p>
-          </li>
+        <ol class="process-timeline">
+          <li class="reveal"><span>01</span><h3>Entendimento</h3><p>Analisamos o negocio, problema e objetivos.</p></li>
+          <li class="reveal"><span>02</span><h3>Estrategia</h3><p>Definimos arquitetura, tecnologias e solucao.</p></li>
+          <li class="reveal"><span>03</span><h3>Desenvolvimento</h3><p>Criamos o produto de forma iterativa.</p></li>
+          <li class="reveal"><span>04</span><h3>Entrega</h3><p>Implementacao, testes e publicacao.</p></li>
+          <li class="reveal"><span>05</span><h3>Evolucao</h3><p>Monitoramento e melhorias continuas.</p></li>
         </ol>
       </section>
-      <section class="about" id="sobre">
-        <div class="wrap">
-          <div>
-            <p class="tag">Sobre a UpClickWeb</p>
-            <h2>Design que esclarece. Tecnologia que aproxima.</h2>
+
+      <section class="projects-band" id="projetos">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Projetos</p>
+              <h2>Estruturas digitais prontas para escalar.</h2>
+            </div>
+            <p>Exemplos de tipos de solucao que a SYNQORA pode planejar, desenvolver e evoluir com empresas.</p>
           </div>
-          <div>
-            <p>
-              A UpClickWeb cria experiências digitais para transformar uma
-              visita em uma conversa. Unimos estratégia, conteúdo, design e
-              desenvolvimento em páginas claras, rápidas e preparadas para o
-              próximo passo.
-            </p>
-            <small
-              >Espaço preparado para receber futuramente informações
-              institucionais e uma foto real do responsável.</small
-            >
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <img src="public/assets/visuals/platform-dashboard.svg" alt="Mockup de dashboard operacional" loading="lazy" />
+              <div><span>Dados e BI</span><h3>Command Center Operacional</h3><p>Dashboard para acompanhar indicadores, alertas e fluxos criticos.</p><ul><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul><a href="#contato">Ver projeto</a></div>
+            </article>
+            <article class="project-card reveal">
+              <img src="public/assets/visuals/ai-automation.svg" alt="Mockup de automacao com inteligencia artificial" loading="lazy" />
+              <div><span>Inteligencia Artificial</span><h3>Assistente de Processos</h3><p>Camada de IA para triagem, classificacao e execucao de tarefas internas.</p><ul><li>Python</li><li>APIs</li><li>IA</li></ul><a href="#contato">Ver projeto</a></div>
+            </article>
+            <article class="project-card reveal">
+              <img src="public/assets/visuals/saas-platform.svg" alt="Mockup de plataforma SaaS" loading="lazy" />
+              <div><span>Produto Digital</span><h3>Plataforma SaaS B2B</h3><p>Produto web com areas administrativas, assinaturas e integracoes externas.</p><ul><li>Next.js</li><li>TypeScript</li><li>Cloud</li></ul><a href="#contato">Ver projeto</a></div>
+            </article>
           </div>
         </div>
       </section>
-      <section class="wrap" id="faq">
-        <div class="heading">
+
+      <section class="section-shell tech-section">
+        <div class="section-heading reveal">
           <div>
-            <p class="tag">Dúvidas frequentes</p>
-            <h2>Antes de começar.</h2>
+            <p class="eyebrow">Tecnologias</p>
+            <h2>Stack moderna para produtos confiaveis.</h2>
           </div>
-          <p>Respostas objetivas para avaliar o próximo passo com segurança.</p>
+          <p>Selecionamos tecnologias conforme o problema, a maturidade do time e o ciclo de evolucao esperado para cada solucao.</p>
         </div>
-        <div class="faqs">
-          <article>
-            <h3>
-              <button aria-expanded="false" aria-controls="f1">
-                Quanto tempo leva para meu site ficar pronto?<span>+</span>
-              </button>
-            </h3>
-            <div id="f1" hidden>
-              Depende do projeto. Em geral, uma landing page leva de 3 a 7 dias
-              e um site institucional, de 7 a 20 dias.
-            </div>
-          </article>
-          <article>
-            <h3>
-              <button aria-expanded="false" aria-controls="f2">
-                Preciso ter domínio e hospedagem?<span>+</span>
-              </button>
-            </h3>
-            <div id="f2" hidden>
-              Se você ainda não tiver, orientamos e configuramos tudo. Se já
-              tiver, usamos a sua estrutura.
-            </div>
-          </article>
-          <article>
-            <h3>
-              <button aria-expanded="false" aria-controls="f3">
-                Meu site vai funcionar no celular?<span>+</span>
-              </button>
-            </h3>
-            <div id="f3" hidden>
-              Sim. Todo projeto é responsivo e pensado para oferecer uma boa
-              experiência em diferentes telas.
-            </div>
-          </article>
-          <article>
-            <h3>
-              <button aria-expanded="false" aria-controls="f4">
-                Vocês integram formulário e WhatsApp?<span>+</span>
-              </button>
-            </h3>
-            <div id="f4" hidden>
-              Sim. A estrutura pode direcionar contatos ao WhatsApp e organizar
-              os dados enviados pelo formulário.
-            </div>
-          </article>
+        <div class="tech-cloud reveal" aria-label="Tecnologias utilizadas">
+          <span>React</span><span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>Python</span><span>Java</span><span>Spring Boot</span><span>Laravel</span><span>PostgreSQL</span><span>MySQL</span><span>APIs</span><span>Inteligencia Artificial</span><span>Cloud</span>
         </div>
       </section>
-      <section class="contact" id="contato">
-        <div class="wrap">
-          <div>
-            <p class="tag">Vamos conversar</p>
-            <h2>Seu próximo site começa com uma boa conversa.</h2>
-            <p>
-              Conte o que você precisa. Ao enviar, abriremos o WhatsApp com a
-              mensagem pronta para sua confirmação.
-            </p>
-            <a
-              href="https://wa.me/5561995289436?text=Olá!%20Quero%20um%20site%20com%20a%20UpClickWeb."
-              target="_blank"
-              rel="noopener"
-              >Falar diretamente no WhatsApp ↗</a
-            >
+
+      <section class="about-section" id="sobre">
+        <div class="section-shell about-grid">
+          <div class="reveal">
+            <p class="eyebrow">Sobre a SYNQORA</p>
+            <h2>Tecnologia pensada para resolver problemas reais.</h2>
           </div>
-          <form id="contactForm" novalidate>
+          <div class="about-copy reveal">
+            <p>A SYNQORA desenvolve solucoes digitais que conectam tecnologia, dados e inteligencia para transformar a maneira como empresas operam, crescem e criam novos produtos.</p>
+            <p>Nosso trabalho combina visao de negocio, engenharia de software, automacao e inteligencia artificial para criar sistemas claros, integrados e preparados para evoluir.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section section-shell reveal">
+        <div>
+          <p class="eyebrow">Proximo passo</p>
+          <h2>Tire sua ideia do papel.</h2>
+          <p>Conte para a SYNQORA o que voce precisa construir, automatizar ou transformar.</p>
+        </div>
+        <a class="btn" href="#contato">Falar sobre meu projeto</a>
+      </section>
+
+      <section class="contact-section" id="contato">
+        <div class="section-shell contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">Contato</p>
+            <h2>Vamos desenhar a solucao certa para o seu negocio.</h2>
+            <p>Envie uma breve descricao do desafio. A mensagem sera preparada no WhatsApp para iniciarmos a conversa com contexto.</p>
+            <a href="mailto:contato@synqora.com">contato@synqora.com</a>
+          </div>
+          <form id="contactForm" class="reveal" novalidate>
             <div class="row">
-              <label
-                >Nome *<input name="nome" autocomplete="name" required /></label
-              ><label
-                >E-mail *<input
-                  type="email"
-                  name="email"
-                  autocomplete="email"
-                  required
-              /></label>
+              <label>Nome *<input name="nome" autocomplete="name" required /></label>
+              <label>Empresa<input name="empresa" autocomplete="organization" /></label>
             </div>
             <div class="row">
-              <label
-                >Telefone<input
-                  type="tel"
-                  name="telefone"
-                  autocomplete="tel" /></label
-              ><label
-                >Empresa<input name="empresa" autocomplete="organization"
-              /></label>
+              <label>E-mail *<input type="email" name="email" autocomplete="email" required /></label>
+              <label>Telefone<input type="tel" name="telefone" autocomplete="tel" /></label>
             </div>
-            <label
-              >Sobre o projeto *<textarea
-                name="mensagem"
-                rows="4"
-                required
-              ></textarea>
-            </label>
+            <label>Tipo de projeto *<select name="tipo" required><option value="">Selecione</option><option>Site</option><option>Sistema</option><option>Plataforma</option><option>Automacao</option><option>Inteligencia Artificial</option><option>Dados</option><option>Outro</option></select></label>
+            <label>Mensagem *<textarea name="mensagem" rows="5" required></textarea></label>
             <p id="formStatus" role="status"></p>
-            <button class="btn" type="submit">Continuar no WhatsApp ↗</button
-            ><small
-              >Ao continuar, você será direcionado ao WhatsApp. Política de
-              privacidade pendente.</small
-            >
+            <button class="btn" type="submit">Enviar briefing</button>
+            <small>Ao enviar, voce sera direcionado ao WhatsApp com a mensagem preenchida.</small>
           </form>
         </div>
       </section>
     </main>
+
     <footer>
-      <a class="brand" href="#home" aria-label="UpClickWeb — início">
-        <img
-          src="public/assets/brand/upclickweb-logo-header.png"
-          width="312"
-          height="80"
-          alt="upclickweb"
-        />
-      </a>
-      <p>Sites profissionais com estratégia, design e performance.</p>
       <div>
-        <a href="#servicos">Serviços</a><a href="#portfolio">Portfólio</a
-        ><a href="#faq">FAQ</a>
+        <a class="brand" href="#inicio" aria-label="SYNQORA - inicio">
+          <img src="public/assets/brand/synqora-logo.svg" width="178" height="38" alt="SYNQORA" />
+        </a>
+        <p>Software, inteligencia e automacao para negocios.</p>
       </div>
-      <small>© 2026 UpClickWeb.</small>
+      <div class="footer-links">
+        <a href="#solucoes">Solucoes</a><a href="#servicos">Servicos</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a><a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <small>Copyright 2026 SYNQORA. Todos os direitos reservados.</small>
     </footer>
-    <a
-      class="whatsapp"
-      href="https://wa.me/5561995289436?text=Oi!%20Quero%20um%20site%20com%20a%20UpClickWeb."
-      target="_blank"
-      rel="noopener"
-      >WhatsApp ↗</a
-    >
+
+    <a class="whatsapp" href="https://wa.me/5561995289436?text=Ola!%20Quero%20conversar%20sobre%20um%20projeto%20com%20a%20SYNQORA." target="_blank" rel="noopener" aria-label="Falar com a SYNQORA no WhatsApp">WhatsApp</a>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <script src="script.js"></script>
   </body>
